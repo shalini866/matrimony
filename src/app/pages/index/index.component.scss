@@ -121,5 +121,48 @@
 
 .matches-top-container {
   background-color: rgb(238, 103, 104);
+}
+
+.matches-info-container {
   padding: 20px;
+}
+
+.toggle-container {
+  transition: height 0.7s cubic-bezier(0.58, 0.21, 0.23, 0.56);
+  transition: margin-block 0.7s cubic-bezier(0.58, 0.21, 0.23, 0.56);
+}
+
+.toggle-container-button {
+  transition: display 0.7s cubic-bezier(0.58, 0.21, 0.23, 0.56);
+
+}
+
+:host ::ng-deep {
+
+  .mat-mdc-tab-link-container {
+    overflow: auto;
+  }
+  .invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mdc-tab__content {
+    padding: 0px 10px
+  }
+
+  .mdc-tab__text-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .mat-mdc-tab-link {
+    .mdc-tab__text-label {
+      color: #dccccc;
+    }
+  }
+  .mat-mdc-tab-link.mdc-tab--active {
+    .mdc-tab__text-label {
+      color: #ffffff;
+    }
+  }
 }
