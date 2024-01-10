@@ -10,8 +10,7 @@
                 <div class="d-flex justify-content-between">
                     <span class="align-items-center d-flex justify-content-start">
                         <h5 class="mb-0 pr-1 addr-font-size">{{matchData.id}}</h5>
-                        <span *ngIf="!!matchData.status" class="status-font-size d-flex align-items-center"
-                            [ngStyle]="{'color': getStatusTextColor(matchData.status)}">
+                        <span *ngIf="!!matchData.memberShipStatus" class="status-font-size d-flex align-items-center">
                             {{(matchData.status).toUpperCase()}}
                         </span>
                     </span>

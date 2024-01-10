@@ -21,7 +21,7 @@ export class MatchesComponent {
       "address": "chennai,Tamil Nadu,India",
       "Prof": "Software Professional",
       "degree": "B.Tech",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(222,220,237)",
       "lastchatted": "2 wks ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGmUDlytmSKJqLXsQ9_5CBbeawRcs08QqM_QVOU_gluA&s"
@@ -35,7 +35,7 @@ export class MatchesComponent {
       "address": "MUmbai, Tamil Nadu, India",
       "Prof": "Software Professional",
       "degree": "B.Com",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: true, assisted: false, show: true },
       "color": "rgb(205,180,130)",
       "lastchatted": "2 wks ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpnkqJFiYqNMtugvngQh1nHUGz5kH8MpsR7g&usqp=CAU"
@@ -50,7 +50,7 @@ export class MatchesComponent {
       "address": "P, Tamil Nadu, India",
       "Prof": "Software Professional",
       "degree": "B.Tech",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: false },
       "color": "rgb(222,220,237)",
       "lastchatted": "1 wks ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJoB8Po6K-M-TOlfwLkXedLRKr4822u0md-A&usqp=CAU"
@@ -64,7 +64,7 @@ export class MatchesComponent {
       "address": "Delhi, India",
       "Prof": "Marketing Executive",
       "degree": "MBA",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(205,180,130)",
       "lastchatted": "3 hrs ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhoEFAoEuRsZBF-e7Ap9qb6O4gEwcoA1Wygx0S032KYOI_AOPhjUmAhuT7EKIDsO_OFr4&usqp=CAU"
@@ -78,7 +78,7 @@ export class MatchesComponent {
       "address": "Mumbai, Maharashtra, India",
       "Prof": "Journalist",
       "degree": "BA",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(222,220,237)",
       "lastchatted": "1 wks ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQbhqnO1BxbupHb8dz3v3urTOSndHr-oB1g&usqp=CAU"
@@ -92,7 +92,7 @@ export class MatchesComponent {
       "address": "Kolkata, West Bengal, India",
       "Prof": "Software Engineer",
       "degree": "B.Tech",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(222,220,237)",
       "lastchatted": "1 month ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsAAOkS4PFkJXqNlJii6aEiDZbe8hLuQtBSmm5bWX0wYMCspwdO5GOrDWbRyoQhADsnLg&usqp=CAU"
@@ -106,7 +106,7 @@ export class MatchesComponent {
       "address": "Bangalore, Karnataka, India",
       "Prof": "Doctor",
       "degree": "MBBS",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(205,180,130)",
       "lastchatted": "4 hrs ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2EJKUEQSGznzv42gDFxAt8Q969KvLR6wN_A&usqp=CAU"
@@ -120,7 +120,7 @@ export class MatchesComponent {
       "address": "Jaipur, Rajasthan, India",
       "Prof": "Architect",
       "degree": "B.Arch",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(222,220,237)",
       "lastchatted": "5 days ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMjtQBov56OAJ7YJUmTUfeYpvVau2zgDkCyA&usqp=CAU"
@@ -134,7 +134,7 @@ export class MatchesComponent {
       "address": "Ahmedabad, Gujarat, India",
       "Prof": "Graphic Designer",
       "degree": "BFA",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(205,180,130)",
       "lastchatted": "52 mins ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpvzYvzFb44Qp6i9UEzuul1PB-NLF98njmg&usqp=CAU"
@@ -148,7 +148,7 @@ export class MatchesComponent {
       "address": "Hyderabad, Telangana, India",
       "Prof": "Engineer",
       "degree": "M.Tech",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(222,220,237)",
       "lastchatted": "1 wks ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuvtnZtdlSeudxLlNQuXoEMBwIHzJqOGiIrQ&usqp=CAU"
@@ -162,7 +162,7 @@ export class MatchesComponent {
       "address": "Pune, Maharashtra, India",
       "Prof": "Software Developer",
       "degree": "B.Tech",
-      "memberShipStatus": { prime: true, assisted: true },
+      "memberShipStatus": { prime: false, assisted: true, show: true },
       "color": "rgb(222,220,237)",
       "lastchatted": "32 mins ago",
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNRqKoghIDo3Vefq59_pyxm3TMTFnMYzOzg&usqp=CAU"
