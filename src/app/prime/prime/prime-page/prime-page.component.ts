@@ -21,7 +21,7 @@ export class PrimePageComponent implements OnInit {
       buttonText: 'Upload Photo'
     },
     {
-      title: 'Verify you profile with ID proof',
+      title: 'Verify you profile with an ID proof',
       buttonText: 'Upload ID Proof'
     }
   ]

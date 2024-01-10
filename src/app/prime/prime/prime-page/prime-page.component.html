@@ -15,15 +15,15 @@
       </button>
     </div>
     <div class="title-container d-flex align-items-center justify-content-center mt-3">
-      <div class="text-center">
+      <div class="text-center ">
         <h2 class="text-white mb-0">Introducing</h2>
         <h2 class="text-white">MudailyarMatrimony PRIME</h2>
       </div>
     </div>
-    <div class="prime-content d-flex justify-content-center mx-auto text-white" style="width: 90%;">
+    <div class="prime-content d-flex justify-content-center mx-auto text-white mt-4" style="width: 90%; ">
       <div class="prime-content-holder">
         <h4 class="prime-content-title">With PRIME you get:</h4>
-        <div class="prime-content-description">
+        <div class="prime-content-description" style="font-size:large;font-weight: 200;">
           <ul class="mb-5 p-0">
             <ng-container *ngFor="let list of lists">
               <li class="text-white mb-3 list-style-none">
@@ -32,7 +32,7 @@
                   <div class="d-flex justify-content-start align-items-start">
                     <span class="material-icons fs-16px" style="vertical-align: middle">star</span>
                   </div>
-                  <p class="d-flex pe-2 m-0 justify-content-start align-items-center">
+                  <p class="d-flex ps-2 m-0 justify-content-start align-items-center">
                     {{list}}
                   </p>
                 </div>
@@ -46,11 +46,11 @@
   <div class="prime-bottom-container d-flex justify-content-center">
     <div class="prime-bottom-content">
       <div>
-        <p class="prime-bottom-content-title fw-bold fs-16px">Be a part of PRIME for free with these simple steps:</p>
+        <p class="prime-bottom-content-title fw-bold fs-16px ">Be a part of PRIME for free with these simple steps:</p>
       </div>
-      <div>
+      <div >
         <ng-container *ngFor="let bottomList of bottomContentLists">
-          <div class="pt-2">
+          <div class="pt-3">
             <p class="fs-16px prime-bottom-content-list-title">{{bottomList.title}}</p>
             <button
              mat-raised-button
