@@ -10,9 +10,19 @@
                 <div class="d-flex justify-content-between">
                     <span class="align-items-center d-flex justify-content-start">
                         <h5 class="mb-0 pr-1 addr-font-size">{{matchData.id}}</h5>
-                        <span *ngIf="!!matchData.memberShipStatus" class="status-font-size d-flex align-items-center">
-                            {{(matchData.status).toUpperCase()}}
-                        </span>
+                        <ng-container *ngIf="!!matchData.memberShipStatus && matchData.memberShipStatus.show">
+                            <span class="status-font-size ps-2 d-flex align-items-center text-uppercase d-flex align-items-center" [ngClass]="{'assisted':  matchData.memberShipStatus.assisted, 'primeGold': matchData.memberShipStatus.prime}">
+                                <p class="m-0">
+                                    <ng-container *ngIf="matchData.memberShipStatus.assisted">
+                                    Assisted
+                                    </ng-container>
+                                    <ng-container *ngIf="matchData.memberShipStatus.prime">
+                                    Prime gold
+                                    </ng-container>
+                                </p>
+                                <mat-icon class="flag ms-1">bookmark</mat-icon>
+                            </span>
+                        </ng-container>
                     </span>
                     <span>
                         <mat-icon>more_vert</mat-icon>

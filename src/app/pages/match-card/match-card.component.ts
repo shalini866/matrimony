@@ -8,15 +8,4 @@ import { Component } from '@angular/core';
 })
 export class MatchCardComponent {
   @Input() matchData!: any;
-
-  getStatusTextColor(status: string): string {
-    switch (status.toLowerCase()) {
-      case 'assisted':
-        return 'rgb(222, 220, 237)';
-      case 'prime gold':
-        return 'rgb(207,177,73)';
-      default:
-        return 'default-color';
-    }
-  }
 }
