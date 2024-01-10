@@ -10,14 +10,34 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent {
-  defaultTabIndex = 0;
+  navLinks = [
+    {
+      id: 1,
+      name: 'Just Joined'
+    },
+    {
+      id: 2,
+      name: 'Matches'
+    },
+    {
+      id: 3,
+      name: 'Premium'
+    },
+    {
+      id: 4,
+      name: 'Mutual'
+    }
+  ]
+  activeLink = 1;
   unsubscribeEvent$: any;
   hideContent = true;
 
 
-  constructor(private router: Router, public dataService: DataService) {
+  constructor(
+    private router: Router,
+    public dataService: DataService
+  ) {
     this.unsubscribeEvent$ = this.dataService.getValue.subscribe((data: any) => {
-      console.log('elementdata', data);
       this.hideContent = data;
     });
 
@@ -26,8 +46,8 @@ export class IndexComponent {
   onTabChange(event: any) {
     this.router.navigate(['matches', 'match', 'joined']);
   }
-  goToPrime(){
-     this.router.navigate(['/prime'])
+  goToPrime() {
+    this.router.navigate(['/prime'])
   }
   ngOnDestroy() {
     this.unsubscribeEvent$.unsubscribe();

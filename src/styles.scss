@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; overflow: hidden;}
-body { margin: 0; font-family: 'Roboto Condensed', sans-serif;}
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.confirmbutton {
+    background-color: rgb(252, 251, 247) !important;
+    color: black !important;
+    border-radius: 20px;
+    text-transform: capitalize;
+    padding: 0px 30px !important;
+}

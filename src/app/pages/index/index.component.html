@@ -1,33 +1,43 @@
-
-<div class="sticky-top vh-25">
-
-  <div class="toggle pt-5" *ngIf="hideContent" [ngClass]="hideContent ? 'showContent' : 'hideContent' ">
-    <button class="regular-button" mat-raised-button>Regular</button>
-    <button class="confirmbutton prime-btn" mat-button (click)="goToPrime()">Prime</button>
-</div>
-    <div class="toggle-container pt-0">      
-      
-      <div class="d-flex justify-content-between pt-4">
-        <div>
-          <h2 class="text-white">Matches</h2>
-        </div>
-        <div>
-          <span class="material-icons text-white fs-2 m-2">notifications</span>
-         <span class="material-icons text-white fs-2 m-2">headset_mic</span>
+<div class="matches-container">
+  <div class="matches-top-container">
+    <div class="matches-info-container">
+      <div class="toggle-container"
+        [ngStyle]="{'height.px': hideContent ? 40 :0, 'margin-block.rem': hideContent ? 1: 0 }">
+        <div class="toggle-container-button justify-content-center align-items-center mx-auto toggle-buttons"
+          [ngStyle]="{'display': hideContent ? 'flex': 'none' }">
+          <button class="highlighted-button" mat-raised-button type="button">
+            Regular
+          </button>
+          <button class="un-highlighted-button" type="button" mat-raised-button (click)="goToPrime()">
+            Prime
+          </button>
         </div>
       </div>
-      <mat-tab-group class="d-flex align-items-center pt-1" (selectedTabChange)="onTabChange($event)" [selectedIndex]="defaultTabIndex">
-        <mat-tab label="JUST JOINED"></mat-tab>
-        <mat-tab label="MATCHES"></mat-tab>
-        <mat-tab label="PERMIUM"></mat-tab>
-        <mat-tab label="MUTUAL"></mat-tab>
-      </mat-tab-group>
+      <div class="title-container w-100">
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="text-white text-uppercase fw-bold m-0">Matches</h2>
+          </div>
+          <div>
+            <span class="material-icons text-white fs-2 m-2">notifications</span>
+            <span class="material-icons text-white fs-2 my-2 ms-2 me-0">headset_mic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="matches-nav-container">
+      <div class="tab-nav-bar pb-1">
+        <nav mat-tab-nav-bar [tabPanel]="tabPanel" [disablePagination]="true">
+          <a mat-tab-link *ngFor="let link of navLinks" (click)="onTabChange(link);activeLink = link.id;"
+            [active]="activeLink == link.id">
+            {{link.name}}
+          </a>
+        </nav>
+        <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+      </div>
     </div>
   </div>
-  
+</div>
+
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-
-
-
-

@@ -9,8 +9,9 @@ import { DataService } from 'src/app/data.service';
 
 export class MatchesComponent {
   @ViewChild('scrollMe') private myScrollContainer: ElementRef | any;
-  disableScrollDown = false
-  matchList: any =[
+  disableScrollDown = false;
+  previousScrollHeight = 0;
+  matchList: any = [
     {
       "id": "MDA575165",
       "name": "V.G.Arthy",
@@ -168,23 +169,21 @@ export class MatchesComponent {
      }
   ]
 
-  constructor(public dataService : DataService) {
-    
+  constructor(public dataService: DataService) {
+
   }
   @HostListener('scroll', ['$event'])
   public onScroll() {
-    let element = this.myScrollContainer.nativeElement
-    let atBottom = element.scrollHeight - element.scrollTop === element.clientHeight;
-    console.log('element', element, atBottom);
-    
-    if (this.disableScrollDown && atBottom) {
+    let scrollTop = this.myScrollContainer.nativeElement.scrollTop
+    if (scrollTop > this.previousScrollHeight) {
       this.dataService.emitValue(false);
 
-        this.disableScrollDown = false
+      this.disableScrollDown = false
     } else {
       this.dataService.emitValue(true);
 
-        this.disableScrollDown = true
+      this.disableScrollDown = true
     }
+    this.previousScrollHeight = scrollTop;
   }
 }
