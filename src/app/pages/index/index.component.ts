@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/data.service';
+import { Nav, Navs } from 'src/app/shared/mockdata.interface';
 
 
 @Component({
@@ -10,22 +11,26 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent {
-  navLinks = [
+  navLinks: Navs = [
     {
       id: 1,
-      name: 'Just Joined'
+      name: 'Just Joined',
+      link: 'justJoined',
     },
     {
       id: 2,
-      name: 'Matches'
+      name: 'Matches',
+      link: 'matches',
     },
     {
       id: 3,
-      name: 'Premium'
+      name: 'Premium',
+      link: 'premium',
     },
     {
       id: 4,
-      name: 'Mutual'
+      name: 'Mutual',
+      link: 'mutual',
     }
   ]
   activeLink = 1;
@@ -43,8 +48,8 @@ export class IndexComponent {
 
   }
 
-  onTabChange(event: any) {
-    this.router.navigate(['matches', 'match', 'joined']);
+  onTabChange(event: Nav) {
+    this.router.navigate(['matches', 'match', event.link]);
   }
   goToPrime() {
     this.router.navigate(['/prime'])

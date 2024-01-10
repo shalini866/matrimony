@@ -6,7 +6,7 @@ import { MatchesComponent } from './matches/matches.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'match/joined',
+    redirectTo: 'match/justJoined',
     pathMatch: 'full',
   },
  

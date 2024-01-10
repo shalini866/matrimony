@@ -2,7 +2,7 @@
   <div class="d-flex justify-content-between p-0 mb-3">
     <div class="col-8 p-0">
       <h4 class="m-0">
-        12 New members who match your profile information
+        {{currentViewData.newUsers}} New members who match your profile information
       </h4>
     </div>
     <div class="col-3 p-0">
@@ -11,6 +11,13 @@
         Edit</button>
     </div>
   </div>
-  <app-match-card *ngFor="let data of matchList" [matchData]="data">
-  </app-match-card>
+  <ng-container *ngIf="currentViewData.list.length">
+    <ng-container *ngFor="let data of currentViewData.list">
+      <app-match-card [matchData]="data">
+      </app-match-card>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="!currentViewData.list.length">
+    <p class="fw-bold text-capitalize text-center">No list found</p>
+  </ng-container>
 </div>
