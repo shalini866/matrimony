@@ -27,7 +27,6 @@ export class MatchesComponent {
     private activeRoute: ActivatedRoute,
   ) {
     this.activeRoute.paramMap.subscribe((res: ParamMap) => {
-      console.log(res.get('category'));
       this.currentKey = (res.get('category') as string);
       if (!this.mockData) {
         this.getMockDataInitial()
