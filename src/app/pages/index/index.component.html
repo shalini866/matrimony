@@ -1,30 +1,30 @@
-
 <div class="sticky-top vh-25">
 
-  <div class="toggle pt-5" *ngIf="hideContent" [ngClass]="hideContent ? 'showContent' : 'hideContent' ">
+  <div class="toggle pt-5" [ngClass]="hideContent ? 'showContent' : 'hideContent' ">
     <button class="regular-button" mat-raised-button>Regular</button>
     <button class="confirmbutton prime-btn" mat-button (click)="goToPrime()">Prime</button>
-</div>
-    <div class="toggle-container pt-0">      
-      
-      <div class="d-flex justify-content-between pt-4">
-        <div>
-          <h2 class="text-white">Matches</h2>
-        </div>
-        <div>
-          <span class="material-icons text-white fs-2 m-2">notifications</span>
-         <span class="material-icons text-white fs-2 m-2">headset_mic</span>
-        </div>
-      </div>
-      <mat-tab-group class="d-flex align-items-center pt-1" (selectedTabChange)="onTabChange($event)" [selectedIndex]="defaultTabIndex">
-        <mat-tab label="JUST JOINED"></mat-tab>
-        <mat-tab label="MATCHES"></mat-tab>
-        <mat-tab label="PERMIUM"></mat-tab>
-        <mat-tab label="MUTUAL"></mat-tab>
-      </mat-tab-group>
-    </div>
   </div>
-  
+  <div class="toggle-container pt-0">
+
+    <div class="d-flex justify-content-between pt-4">
+      <div>
+        <h2 class="text-white">Matches</h2>
+      </div>
+      <div>
+        <span class="material-icons text-white fs-2 m-2">notifications</span>
+        <span class="material-icons text-white fs-2 m-2">headset_mic</span>
+      </div>
+    </div>
+    <mat-tab-group class="d-flex align-items-center pt-1" (selectedTabChange)="onTabChange($event)"
+      [selectedIndex]="defaultTabIndex">
+      <mat-tab label="JUST JOINED"></mat-tab>
+      <mat-tab label="MATCHES"></mat-tab>
+      <mat-tab label="PERMIUM"></mat-tab>
+      <mat-tab label="MUTUAL"></mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 
@@ -80,4 +80,3 @@
     </button>
   </div>
 </div> -->
-
