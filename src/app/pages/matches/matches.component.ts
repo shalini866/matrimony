@@ -8,7 +8,7 @@ import { DataService } from 'src/app/data.service';
 })
 
 export class MatchesComponent {
-  @ViewChild('scrollMe') private myScrollContainer: ElementRef | any;
+  @ViewChild('scrollMe') private myScrollContainer!: ElementRef<HTMLDivElement>;
   disableScrollDown = false;
   previousScrollHeight = 0;
   matchList: any = [
