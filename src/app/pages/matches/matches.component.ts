@@ -1,6 +1,6 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute,ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { delay, map, of, switchMap } from 'rxjs';
 import { DataService } from 'src/app/data.service';
 import { MockData, SingleList } from 'src/app/shared/mockdata.interface';
@@ -20,7 +20,7 @@ export class MatchesComponent {
     list: [],
     newUsers: 0
   }
-  currentViewData: SingleList = this.defaultValue; 
+  currentViewData: SingleList = this.defaultValue;
   currentKey!: string;
   constructor(
     public dataService: DataService,
@@ -61,7 +61,7 @@ export class MatchesComponent {
           this.mockData = data;
           this.currentViewData = this.mockData[this.currentKey] || this.defaultValue
         }, (err: HttpErrorResponse) => {
-          console.log('asdfasdfasd', err);
+          this.currentViewData = this.defaultValue
         })
   }
 }

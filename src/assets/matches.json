@@ -202,7 +202,7 @@
       }
     ]
   },
-  "Matches": {
+  "matches": {
     "newUsers": 12,
     "list": [
       {
@@ -405,7 +405,7 @@
       }
     ]
   },
-  "Premium": {
+  "premium": {
     "newUsers": 12,
     "list": [
       {
@@ -608,7 +608,7 @@
       }
     ]
   },
-  "Mutal": {
+  "mutual": {
     "newUsers": 12,
     "list": [
       {

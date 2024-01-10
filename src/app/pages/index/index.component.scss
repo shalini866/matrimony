@@ -166,3 +166,17 @@
     }
   }
 }
+
+:host {
+  position: relative;
+}
+
+.float-filter-container {
+  bottom: 140px;
+  right: 10px;
+  position: fixed !important;
+  button {
+    background-color: rgb(238, 103, 104) !important;
+    border-color: rgb(238, 103, 104);
+  }
+}
