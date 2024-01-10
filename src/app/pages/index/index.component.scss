@@ -1,0 +1,111 @@
+.toggle-container {
+    background-color: rgb(238,103,104);
+    padding: 10px;
+  }
+  
+  .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238,103,104);
+  }
+  
+
+
+
+.regular-button{
+    background-color: rgb(198,61,67) !important;
+    color: #fff !important;
+    border-radius: 25px;
+    border: 2px solid #dfdfdf;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .confirmbutton {
+    background-color: #fff !important;
+    color: #9065cb !important;
+    text-transform: uppercase;
+    padding: 0px 30px !important;
+    height: 34px;
+    border-radius: 26px;
+    font-size: 18px !important;
+    position: relative;
+    margin-left: -22px;
+    top: 5px;
+  }
+  
+  .opt_btn button.confirmbutton{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .prime-btn {
+    position: relative !important;
+    top:0 !important
+  }
+
+  ::ng-deep .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+    --mdc-tab-indicator-active-indicator-color: #FFFFFF !important;
+    --mat-tab-header-disabled-ripple-color:  #FFFFFF;
+    --mat-tab-header-pagination-icon-color:  #FFFFFF;
+    --mat-tab-header-inactive-label-text-color:  #FFFFFF;
+    --mat-tab-header-active-label-text-color: #FFFFFF;
+    --mat-tab-header-active-ripple-color: #FFFFFF;
+    --mat-tab-header-inactive-ripple-color: #FFFFFF;
+    --mat-tab-header-inactive-focus-label-text-color:  #FFFFFF;
+    --mat-tab-header-inactive-hover-label-text-color:  #FFFFFF;
+    --mat-tab-header-active-focus-label-text-color: #FFFFFF;
+    --mat-tab-header-active-hover-label-text-color: #FFFFFF;
+    --mat-tab-header-active-focus-indicator-color: #FFFFFF;
+    --mat-tab-header-active-hover-indicator-color: #FFFFFF;
+}
+// // changes
+// .showContent{
+//   /*and eventually delay an overflow:auto; */
+//   transition: max-height 0.5s, overflow 0s;
+// }
+// .hideContent { 
+//   /* here comes the compromise, set a max-height that would for your usual contents*/
+//   transition: max-height 0.5s, overflow 0.5s 0.5s;
+// }
+
+::ng-deep.mdc-tab {
+  min-width: 90px;
+  padding-right: 1px !important;
+  padding-left: 0px !important; 
+}
+
+
+
+
+// .prime-body {
+//   background-color: rgb(19, 60, 128);
+//   padding: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+
+// }
+
+// .prime-toggle {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: rgb(19, 60, 128);
+//   margin-top: 10px; 
+// }
+.prime-container {
+  background-color:rgb(6,30,68);
+  padding: 10px;
+}
+
+.prime-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6,30,68);
+}
+

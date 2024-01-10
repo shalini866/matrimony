@@ -1,0 +1,83 @@
+
+<div class="sticky-top vh-25">
+
+  <div class="toggle pt-5" *ngIf="hideContent" [ngClass]="hideContent ? 'showContent' : 'hideContent' ">
+    <button class="regular-button" mat-raised-button>Regular</button>
+    <button class="confirmbutton prime-btn" mat-button (click)="goToPrime()">Prime</button>
+</div>
+    <div class="toggle-container pt-0">      
+      
+      <div class="d-flex justify-content-between pt-4">
+        <div>
+          <h2 class="text-white">Matches</h2>
+        </div>
+        <div>
+          <span class="material-icons text-white fs-2 m-2">notifications</span>
+         <span class="material-icons text-white fs-2 m-2">headset_mic</span>
+        </div>
+      </div>
+      <mat-tab-group class="d-flex align-items-center pt-1" (selectedTabChange)="onTabChange($event)" [selectedIndex]="defaultTabIndex">
+        <mat-tab label="JUST JOINED"></mat-tab>
+        <mat-tab label="MATCHES"></mat-tab>
+        <mat-tab label="PERMIUM"></mat-tab>
+        <mat-tab label="MUTUAL"></mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+
+<!-- 
+<div>
+  <div class="prime-container">
+    <div class="prime-toggle pt-3">
+      <button class="yesbutton" mat-raised-button>Regular</button>
+      <button class="confirmbutton prime-btn" mat-button>Prime</button>
+      <span class="material-icons" style="margin-left: 10px;">close</span>
+    </div>
+    <div class="d-flex align-items-center justify-content-center pt-3">
+      <div class="text-center">
+        <h2 class="text-white mb-0">Introducing</h2>
+        <h2 class="text-white">MudailyarMatrimony PRIME</h2>
+      </div>
+    </div>
+    <div class="pl-30 text-white">
+      <h2 class="" style="margin-top: 10px;">With PRIME you get:</h2>
+    </div>
+    <div class="mb-2">
+      <ul class="mb-4 p-0">
+        <li class="text-white  mb-3">
+          <span class="material-icons" style="vertical-align: middle;">star</span>
+          100% ID verified, high-quality profiles
+        </li>
+        <li class="text-white  mb-3">
+          <span class="material-icons" style="vertical-align: middle;">star</span>
+          Matches with photos and complete information
+        </li>
+        <li class="text-white  mb-2">
+          <span class="material-icons" style="vertical-align: middle;">star</span>
+          The finest and most trustworthy profiles to choose from
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pl-2">
+    <h2 class="">Be a part of PRIME for free with these simple teps:</h2>
+  </div>
+  <div class="pl-2">
+    <p>Add Your Photo to join the exclusive club</p>
+    <button mat-raised-button style="border-radius: 50px; background-color: rgb(52, 156, 191); color: white;">
+      Upload Photo
+    </button>
+  </div>
+  <div class="pl-2 pt-2">
+    <p>Verify you profile with ID proof</p>
+    <button mat-raised-button style="border-radius: 50px; background-color: rgb(52, 156, 191); color: white;">
+      Upload ID Proof
+    </button>
+  </div>
+</div> -->
+

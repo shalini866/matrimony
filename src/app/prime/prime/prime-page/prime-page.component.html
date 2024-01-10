@@ -1,0 +1,66 @@
+<div class="prime-container">
+  <div class="prime-top-container ">
+    <div class="toggle-container position-relative">
+      <div class="d-flex justify-content-center align-items-center mx-auto mt-3 toggle-buttons">
+        <button class="confirmbutton" mat-raised-button type="button" (click)="backClicked()">
+          Regular
+        </button>
+        <button class="prime-button" type="button" mat-raised-button>
+          Prime
+        </button>
+      </div>
+      <button class="material-icons close-btn text-white position-absolute top-50 end-0 translate-middle-y"
+        type="button" (click)="backClicked()">
+        close
+      </button>
+    </div>
+    <div class="title-container d-flex align-items-center justify-content-center mt-3">
+      <div class="text-center">
+        <h2 class="text-white mb-0">Introducing</h2>
+        <h2 class="text-white">MudailyarMatrimony PRIME</h2>
+      </div>
+    </div>
+    <div class="prime-content d-flex justify-content-center mx-auto text-white" style="width: 90%;">
+      <div class="prime-content-holder">
+        <h4 class="prime-content-title">With PRIME you get:</h4>
+        <div class="prime-content-description">
+          <ul class="mb-5 p-0">
+            <ng-container *ngFor="let list of lists">
+              <li class="text-white mb-3 list-style-none">
+                <div class="d-flex justify-content-start align-items-start">
+  
+                  <div class="d-flex justify-content-start align-items-start">
+                    <span class="material-icons fs-16px" style="vertical-align: middle">star</span>
+                  </div>
+                  <p class="d-flex pl-2 m-0 justify-content-start align-items-center">
+                    {{list}}
+                  </p>
+                </div>
+              </li>
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="prime-bottom-container d-flex justify-content-center">
+    <div class="prime-bottom-content">
+      <div>
+        <p class="prime-bottom-content-title fw-bold fs-16px">Be a part of PRIME for free with these simple steps:</p>
+      </div>
+      <div>
+        <ng-container *ngFor="let bottomList of bottomContentLists">
+          <div class="pt-2">
+            <p class="fs-16px prime-bottom-content-list-title">{{bottomList.title}}</p>
+            <button
+             mat-raised-button
+             class="prime-bottom-content-list-button"
+            >
+              {{bottomList.buttonText}}
+            </button>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

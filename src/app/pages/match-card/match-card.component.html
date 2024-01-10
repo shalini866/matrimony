@@ -1,0 +1,46 @@
+
+<mat-card class="example-card mb-3">
+    <mat-card-content>
+        <div class="d-flex">
+            <div class="col-4 pt-2 pb-0">
+                <div mat-card-avatar class="profile-image"
+                [ngStyle]="{'background-image': 'url(' + matchData.img + ')'}">
+            </div>
+            </div>
+            <div class="col-8 p-0">
+                <div class="d-flex justify-content-between">
+                    <span class="d-flex align-items-center">
+                        <h5 class="mb-0 pr-1 addr-font-size">{{matchData.id}}</h5>
+                        <span *ngIf="!!matchData.status" class="status-font-size d-flex align-items-center">{{(matchData.status).toUpperCase()}}
+                   
+                        </span>
+                    </span>
+                    <span>
+                        <mat-icon>more_vert</mat-icon>
+                    </span>
+                </div>
+                <h3 class="mb-0"><strong>{{matchData.name}}</strong></h3>
+                <span class="d-flex align-items-center"><h5 class="mb-0 addr-font-size">{{matchData.age}}yrs, {{matchData.ht}}, {{matchData.marriageStatus}},</h5></span>
+                <span class="d-flex align-items-center"><h5 class="mb-0 addr-font-size">{{matchData.address}},</h5></span>
+                <span class="d-flex align-items-center"><h5 class="mb-0 addr-font-size">{{matchData.Prof}}, {{matchData.degree}}.</h5></span>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-footer class="pb-1">
+        <mat-divider></mat-divider>
+        <div class="d-flex justify-content-around pt-2">
+            <div class="d-flex align-items-center">
+                <mat-icon fontIcon="star" class="icon-color"></mat-icon>
+                <span class="pb-1">Shortlist</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <mat-icon fontIcon="textsms" class="chat-icon-color"></mat-icon>
+                <span class="pb-1">{{matchData.lastchatted}}</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <mat-icon fontIcon="check_circle" class="icon-color"></mat-icon>
+                <span class="pb-1">Send Interest</span>
+            </div>
+        </div>
+    </mat-card-footer>
+</mat-card>

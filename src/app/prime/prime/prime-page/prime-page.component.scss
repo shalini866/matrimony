@@ -1,0 +1,80 @@
+.prime-top-container {
+  background-color: rgb(6, 30, 68);
+  padding: 10px;
+}
+
+.prime-bottom-container {
+  padding: 20px;
+}
+
+.prime-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 30, 68);
+}
+
+.prime-button {
+  background: linear-gradient(to right, #FCD57F, #CF8219);
+  color: black !important;
+  border-radius: 25px;
+  border: 2px solid #dfdfdf;
+  height: 42px;
+  width: 100px;
+  display: block;
+  font-size: 18px !important;
+  margin-left: -27px;
+  font-weight: 500;
+}
+
+.confirmbutton {
+  background-color: rgb(252, 251, 247) !important;
+  color: black !important;
+  border-radius: 20px;
+  text-transform: capitalize;
+  padding: 0px 30px !important;
+
+}
+
+
+.close-btn {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.translate-middle-y {
+  transform: translateY(-50%) !important;
+}
+
+.end-0 {
+  right: 0 !important;
+}
+
+.top-50 {
+  top: 50% !important;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+
+.fs-16px {
+  font-size: 16px !important;
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.prime-bottom-content-list-button {
+  background: linear-gradient(to right, #1C93C9, #1CABF3);
+  color: rgb(255, 255, 255) !important;
+  border-radius: 25px;
+  border: 2px solid #1C93C9;
+  outline: none;
+  &:hover, &:focus {
+    outline: #1C93C9;
+  }
+}

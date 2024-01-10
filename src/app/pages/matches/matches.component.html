@@ -1,0 +1,19 @@
+<div class="container mt-3 custom_hight " #scrollMe (scroll)="onScroll()">
+  <div class="col-12 d-flex justify-content-between p-0">
+    <div class="col-8 p-0">
+       <h4>
+        12 New members who match your profile information
+       </h4>
+    </div>
+    <div class="col-3 p-0">
+      <span class="float-right"> 
+        <button mat-stroked-button class="edit-btn rounded-pill border-light">
+          <mat-icon>edit</mat-icon>
+          Edit</button>
+      </span>
+    </div>
+  </div>
+  <app-match-card
+  *ngFor="let data of matchList" [matchData]="data">
+  </app-match-card>
+</div>

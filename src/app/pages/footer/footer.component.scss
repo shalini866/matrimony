@@ -1,0 +1,25 @@
+.copyright ul {
+    padding: 15px;
+  }
+  .copyright li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px 0px 10px;
+    font-size: 14px;
+  }
+  .copyright li.active {
+    color: green;
+  }
+  
+  .copyright {
+    z-index: 9;
+    background: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  .copyright img {
+    display: block;
+    margin: 3px auto;
+  }
+  
